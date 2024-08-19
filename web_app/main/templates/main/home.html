@@ -53,9 +53,10 @@
         <button class="slider-btn next">›</button>
       </div>
     </div>
+
     <div class="vertical-blocks">
       <div class="vertical-block">
-        <img src="{% static 'main/images/photo2.png' %}" alt="Ливневые работы" />
+        <img src="{% static 'main/images/photo3.png' %}" alt="Ливневые работы" />
         <div class="content">
           <h2>Вид ливневых работ 1</h2>
           <p>Описание работы</p>
@@ -63,7 +64,15 @@
         </div>
       </div>
       <div class="vertical-block">
-        <img src="https://via.placeholder.com/500" alt="Заглушка" />
+        <img src="{% static 'main/images/photo4.png' %}" alt="Ливневые работы" />
+        <div class="content">
+          <h2>Вид ливневых работ 2</h2>
+          <p>Описание работы</p>
+          <a class="btn" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div class="vertical-block">
+        <img src="{% static 'main/images/photo5.png' %}" alt="Ливневые работы" />
         <div class="content">
           <h2>Вид ливневых работ 2</h2>
           <p>Описание работы</p>
@@ -88,5 +97,20 @@
         <p class="text-center">© 2024 ООО "Основа"</p>
       </footer>
     </div>
+    <div id="feedback-button" class="feedback-button">
+      &#9993;
+    </div>
+    <div id="feedback-form" class="feedback-form">
+      <button id="close-button" class="close-button">&times;</button>
+      <h2>Запросить звонок</h2>
+      <form>
+        <label for="name">Как к Вам обращаться:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Ваш номер телефона:</label>
+        <input type="phone" id="phone" name="phone" required>
+        <label form="message">Что Вас заинтересовало:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
   </body>
 </html>
